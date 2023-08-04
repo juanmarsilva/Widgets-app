@@ -12,7 +12,7 @@ class ProgressScreen extends StatelessWidget {
             appBar: AppBar(
                 title: const Text('Progress Indicators')
             ),
-            body: _ProgressIndicatorsView(),
+            body: const _ProgressIndicatorsView(),
         );
     }
 }
