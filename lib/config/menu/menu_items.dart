@@ -72,4 +72,11 @@ const List<MenuItems> appMenuItems = [
         link: '/infinite-scroll', 
         icon: Icons.list_alt_rounded,
     ),
+
+    MenuItems(
+        title: 'Counter Screen', 
+        subtitle: 'Contador numerico', 
+        link: '/counter', 
+        icon: Icons.plus_one_outlined,
+    ),
 ];
