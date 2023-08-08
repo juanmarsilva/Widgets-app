@@ -25,7 +25,6 @@ class AppTheme {
         assert( selectedColor >= 0, 'Selected color must be grather than 0' ),
         assert( selectedColor < colorList.length, 'Selected color must be less or equal than ${colorList.length - 1} ');
 
-
     ThemeData getTheme() => ThemeData(
         useMaterial3: true,
         brightness: isDarkMode ? Brightness.dark : Brightness.light,
@@ -35,4 +34,13 @@ class AppTheme {
         )
     );
 
+
+    AppTheme copyWith({
+        int? selectedColor,
+        bool? isDarkMode
+    }) => AppTheme(
+        selectedColor: selectedColor ?? this.selectedColor,
+        isDarkMode: isDarkMode ?? this.isDarkMode,
+    );
+    
 }
