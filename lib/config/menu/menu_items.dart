@@ -79,4 +79,11 @@ const List<MenuItems> appMenuItems = [
         link: '/counter', 
         icon: Icons.plus_one_outlined,
     ),
+
+    MenuItems(
+        title: 'Cambiar tema', 
+        subtitle: 'Cambiar tema de la aplicacion', 
+        link: '/theme-changer', 
+        icon: Icons.color_lens_outlined,
+    ),
 ];
